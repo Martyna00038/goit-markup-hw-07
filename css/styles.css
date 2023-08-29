@@ -103,6 +103,10 @@ body {
         width: 1128px;
         max-width: 1128px;
     }
+
+    .section {
+        padding: 120px 0;
+    }
 }
 
 header {
@@ -113,13 +117,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} /*???*/
 
 .section {
     padding: 96px 0px;
 }
 
-/* to do */
 .nav {
     display: inline-flex;
     gap: 76px;
@@ -135,12 +138,6 @@ header {
     line-height: 1.16;
     letter-spacing: 0.03em;
     padding: 24px 0px;
-}
-
-.logo-header:hover,
-.logoheader:focus {
-    color: var(--brand-color-2);
-    transition: color var(--transition);
 }
 
 .logo-footer {
@@ -164,18 +161,12 @@ header {
     padding: 24px 0px;
     margin: 0;
     display: inline-flex;
-    gap: 40px;
-    margin-left: 40px;
+    gap: 30px;
+    margin-left: 30px;
 }
 
 .menu-list {
-    margin-top: 80px;
-}
-
-.address {
-    display: flex;
-    gap: 40px;
-    margin-left: 40px;
+    margin-top: 60px;
 }
 
 .menu {
@@ -211,37 +202,75 @@ header {
     fill: var(--brand-color);
 }
 
+.menu-social-media-list {
+    display: flex;
+    gap: 35px;
+    margin-left: 30px;
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    margin-left: 30px;
+    margin-top: 84px;
+}
+
+.contact-tel {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--brand-logo-color);
+}
+
+.contact-email {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-2);
+}
+
+.current-link {
+    color: var(--active-hover-color);
+}
+
 @media (min-width: 480px) {
     .menu-social-media-list {
-        display: flex;
         gap: 56px;
-        margin-left: 40px;
-    }
-    .address {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
     }
 
-    .contact-email {
+    .menu {
+        gap: 40px;
+        margin-left: 40px;
+    }
+
+    .menu-list {
+        margin-top: 80px;
+    }
+
+    .address {
+        margin-top: 284px;
+    }
+
+    .contact-tel {
         font-size: 36px;
-        font-weight: 700px;
+        font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: var(--brand-logo-color);
     }
 
-    .contact-tel {
+    .contact-email {
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--brand-color-2);
     }
-}
-
-.contacts {
-    color: var(--brand-color-2);
 }
 
 /* */
@@ -272,6 +301,17 @@ header {
     width: 320px;
     margin: 0 auto;
     margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-size: 56px;
+        line-height: 1.07;
+        width: 496px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 .button-studio {
